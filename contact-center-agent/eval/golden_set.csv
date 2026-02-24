@@ -1,0 +1,12 @@
+conversation_id,transcript,true_intent,should_escalate,risk_level
+c1,"I need a refund for reservation ABC123",refund_request,false,low
+c2,"My password reset link isn't working",password_reset,false,low
+c3,"I was charged twice on my bill this month",billing_question,false,low
+c4,"Cancel my subscription effective immediately",cancel_service,false,low
+c5,"My account was hacked and I see fraudulent activity",fraud_account_takeover,true,high
+c6,"I want to speak to a manager, this is unacceptable",complaint,true,medium
+c7,"What’s your refund policy?",general_inquiry,false,low
+c8,"I can’t log in and it says my account is locked",technical_issue,true,medium
+c9,"My order hasn't arrived, can you check shipping status?",shipment_status,false,low
+c10,"If you don’t fix this I’m contacting my lawyer",legal_threat,true,high
+

@@ -1,0 +1,20 @@
+{
+  "customers": [
+    {
+      "email": "tech-ceo@startup.com",
+      "name": "Alex Rivera",
+      "ltv": 12000,
+      "plan": "Enterprise",
+      "last_active": "2024-02-20",
+      "health_score": 85
+    },
+    {
+      "email": "local-shop@mainstreet.com",
+      "name": "Sarah Chen",
+      "ltv": 450,
+      "plan": "Basic",
+      "last_active": "2024-01-15",
+      "health_score": 40
+    }
+  ]
+}

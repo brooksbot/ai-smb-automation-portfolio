@@ -1,0 +1,59 @@
+:root {
+  color-scheme: light dark;
+  
+  --bg: #f8fafc;           /* Light grey-blue background */
+  --fg: #0f172a;
+  --card: #ffffff;         /* Pure white cards */
+  --border: #e2e8f0;
+  
+  --primary: #2563eb;      /* Cresta Blue */
+  --primary-fg: #ffffff;
+  
+  /* Button Specifics */
+  --btn-bg: #ffffff;
+  --btn-border: #cbd5e1;
+  --btn-hover: #f1f5f9;
+  
+  --info-bg: #eff6ff;
+  --info-border: #bfdbfe;
+  --info-fg: #1e40af;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #020617;         /* Deep navy background */
+    --fg: #f1f5f9;
+    --card: #1e293b;       /* Lighter navy cards */
+    --border: #334155;
+
+    --primary: #3b82f6;
+    --primary-fg: #ffffff;
+
+    /* Button Specifics */
+    --btn-bg: #334155;     /* Distinct button color */
+    --btn-border: #475569;
+    --btn-hover: #475569;
+
+    --info-bg: #172554;
+    --info-border: #1e40af;
+    --info-fg: #dbeafe;
+  }
+}
+
+/* Add this global button hover effect */
+button:hover:not(:disabled) {
+  filter: brightness(0.9);
+  transform: translateY(-1px);
+  transition: all 0.2s ease;
+}
+
+button:active:not(:disabled) {
+  transform: translateY(0px);
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--fg);
+  transition: background-color 0.3s ease;
+}
